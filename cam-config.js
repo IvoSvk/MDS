@@ -8,9 +8,9 @@
     },
     {
         "camera_id": 2,
-        "location": "Havlickuv Brod",
+        "location": "Baska",
         "country": "Czech Republic",
-        "stream_url": "http://185.137.146.14/mjpg/video.mjpg",
+        "stream_url": "http://91.187.63.35:88/mjpg/video.mjpg",
         "audio_url": "audio2.mp3"
     },
     {
