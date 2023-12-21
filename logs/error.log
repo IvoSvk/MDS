@@ -4544,3 +4544,11 @@
 2023/12/20 22:35:04 [alert] 24120#20876: *566 SetFileTime() 'keys/stream3_720-0.key' failed (6: The handle is invalid), client: 127.0.0.1, server: 0.0.0.0:1935
 2023/12/20 22:35:33 [notice] 12664#5584: signal process started
 2023/12/20 22:35:33 [error] 12664#5584: OpenEvent("Global\ngx_stop_3388") failed (2: The system cannot find the file specified)
+2023/12/21 19:11:46 [alert] 10020#32360: *6 SetFileTime() 'keys/stream3_360-0.key' failed (6: The handle is invalid), client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/21 19:11:47 [alert] 10020#32360: *4 SetFileTime() 'keys/stream3_480-0.key' failed (6: The handle is invalid), client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/21 19:11:48 [alert] 10020#32360: *2 SetFileTime() 'keys/stream3_720-0.key' failed (6: The handle is invalid), client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/21 19:11:53 [alert] 10020#32360: *5 SetFileTime() 'keys/stream1_360-0.key' failed (6: The handle is invalid), client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/21 19:11:55 [alert] 10020#32360: *3 SetFileTime() 'keys/stream1_480-0.key' failed (6: The handle is invalid), client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/21 19:11:57 [alert] 10020#32360: *1 SetFileTime() 'keys/stream1_720-0.key' failed (6: The handle is invalid), client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/21 19:12:05 [notice] 1596#29808: signal process started
+2023/12/21 19:12:05 [error] 1596#29808: OpenEvent("Global\ngx_stop_13676") failed (2: The system cannot find the file specified)
