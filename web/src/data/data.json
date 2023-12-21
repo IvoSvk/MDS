@@ -1,20 +1,22 @@
 [
   {
     "camera_id": 1,
-    "location": "Praha",
-    "stream_url": "https://live-par-1-abr-cdn.livepush.io/live/bigbuckbunnyclip/index.m3u8",
-    "audio_url": "vltava.mp3"
+    "stream_url": "http://localhost/hls/stream1_480.m3u8",
+    "audio_url": "audio1.mp3"
   },
   {
     "camera_id": 2,
-    "location": "New York",
-    "stream_url": "https://cams.com/camera2/stream.m3u8",
-    "audio_url": "times.mp3"
+    "stream_url": "http://localhost/hls/stream2_480.m3u8",
+    "audio_url": "audio2.mp3"
   },
   {
     "camera_id": 3,
-    "location": "Soeul",
-    "stream_url": "https://cams.com/camera3/stream.m3u8",
-    "audio_url": "gangnam_style.mp3"
+    "stream_url": "http://localhost/hls/stream3_480.m3u8",
+    "audio_url": "audio.mp3"
+  },
+  {
+    "camera_id": 4,
+    "stream_url": "http://localhost/hls/stream4_480.m3u8",
+    "audio_url": "audio4.mp3"
   }
 ]
