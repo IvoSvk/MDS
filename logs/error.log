@@ -4661,3 +4661,13 @@
 2023/12/21 19:35:52 [alert] 12720#19548: *38 SetFileTime() 'keys/stream4_720-10.key' failed (6: The handle is invalid), client: 127.0.0.1, server: 0.0.0.0:1935
 2023/12/21 19:35:52 [alert] 12720#19548: *39 SetFileTime() 'keys/stream4_480-10.key' failed (6: The handle is invalid), client: 127.0.0.1, server: 0.0.0.0:1935
 2023/12/21 19:35:52 [alert] 12720#19548: *40 SetFileTime() 'keys/stream4_360-10.key' failed (6: The handle is invalid), client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/21 21:57:44 [emerg] 7948#9836: CreateDirectory() "keys" failed (2: The system cannot find the file specified)
+2023/12/21 21:57:46 [emerg] 13928#21100: CreateDirectory() "keys" failed (2: The system cannot find the file specified)
+2023/12/21 21:57:47 [emerg] 7304#14904: CreateDirectory() "keys" failed (2: The system cannot find the file specified)
+2023/12/22 02:27:21 [emerg] 23544#384: cannot load certificate "C:\MDS/conf/ssl/cert.pem": BIO_new_file() failed (SSL: error:02001003:system library:fopen:No such process:fopen('C:\MDS/conf/ssl/cert.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2023/12/22 02:27:31 [emerg] 21928#22192: cannot load certificate "C:\MDS/conf/ssl/cert.pem": BIO_new_file() failed (SSL: error:02001003:system library:fopen:No such process:fopen('C:\MDS/conf/ssl/cert.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2023/12/22 02:27:46 [emerg] 1468#17796: cannot load certificate "C:\MDS/conf/ssl/cert.pem": BIO_new_file() failed (SSL: error:02001003:system library:fopen:No such process:fopen('C:\MDS/conf/ssl/cert.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2023/12/22 02:27:47 [emerg] 18600#18312: cannot load certificate "C:\MDS/conf/ssl/cert.pem": BIO_new_file() failed (SSL: error:02001003:system library:fopen:No such process:fopen('C:\MDS/conf/ssl/cert.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2023/12/22 02:28:09 [emerg] 8824#22568: cannot load certificate "C:\MDS/conf/ssl/cert.pem": BIO_new_file() failed (SSL: error:02001003:system library:fopen:No such process:fopen('C:\MDS/conf/ssl/cert.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2023/12/22 02:36:34 [emerg] 7700#1728: cannot load certificate "C:\MDS/conf/ssl/cert.pem": BIO_new_file() failed (SSL: error:02001003:system library:fopen:No such process:fopen('C:\MDS/conf/ssl/cert.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2023/12/22 02:37:11 [emerg] 2792#5472: cannot load certificate "C:\MDS/conf/ssl/cert.pem": PEM_read_bio_X509_AUX() failed

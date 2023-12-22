@@ -1,40 +1,34 @@
-async function fetchCameraData() {
-    try {
-        const response = await fetch('data/data.json');
-        console.log(response)
-        const cameras = await response.json();
-        displayCameras(cameras);
-    } catch (error) {
-        console.error("Error fetching camera data:", error);
-    }
-}
+fetch('./data/data.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+        const videoContainer = document.getElementById('video-container');
 
-function displayCameras(cameras) {
-    const container = document.querySelector('.container');
+        data.forEach(item => {
+            // Create video element
+            let video = document.createElement('video');
+            video.className = 'video-js';
+            video.controls = true;
+            video.width = 640;
+            video.height = 264;
 
-    cameras.forEach(camera => {
-        const cameraDiv = document.createElement('div');
-        cameraDiv.className = 'camera';
+            // Create source element for video
+            let source = document.createElement('source');
+            source.src = item.stream_url;
+            source.type = 'application/x-mpegURL';
+            video.appendChild(source); // Append source to video
 
-        // Creating video element using Video.js
-        const videoElement = document.createElement('video');
-        videoElement.className = 'video-js vjs-default-skin';
-        videoElement.setAttribute('controls', true);
-        videoElement.setAttribute('preload', 'auto');
-        videoElement.setAttribute('data-setup', '{}');
+            videoContainer.appendChild(video);
+            // Initialize Video.js on this video element
+            videojs(video);
 
-        const source = document.createElement('source');
-        source.setAttribute('src', camera.stream_url);
-        source.setAttribute('type', 'application/x-mpegURL'); // HLS format
+            // Synchronize audio with video playback
 
-        videoElement.appendChild(source);
-        cameraDiv.appendChild(videoElement);
+            video.ontimeupdate = () => video.currentTime;
+            video.addEventListener('error', (e) => {
+                console.error(`Error in video ${item.camera_id}:`, video.error);
+            });
 
-        container.appendChild(cameraDiv);
-
-        // Initialize Video.js player
-        videojs(videoElement);
-    });
-}
-
-window.onload = fetchCameraData;
+        });
+    })
+    .catch(error => console.log('Error fetching and parsing data', error));

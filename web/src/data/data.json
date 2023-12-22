@@ -1,22 +1,19 @@
 [
   {
     "camera_id": 1,
-    "stream_url": "http://localhost/hls/stream1_480.m3u8",
-    "audio_url": "audio1.mp3"
+    "stream_url": "http://localhost/hls/stream1.m3u8"
   },
   {
     "camera_id": 2,
-    "stream_url": "http://localhost/hls/stream2_480.m3u8",
-    "audio_url": "audio2.mp3"
+    "stream_url": "http://localhost/hls/stream2.m3u8"
   },
   {
     "camera_id": 3,
-    "stream_url": "http://localhost/hls/stream3_480.m3u8",
-    "audio_url": "audio.mp3"
+    "stream_url": "http://localhost/hls/stream3.m3u8"
   },
+
   {
     "camera_id": 4,
-    "stream_url": "http://localhost/hls/stream4_480.m3u8",
-    "audio_url": "audio4.mp3"
+    "stream_url": "http://localhost/hls/stream4.m3u8"
   }
 ]
